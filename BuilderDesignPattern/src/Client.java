@@ -1,0 +1,14 @@
+public class Client {
+
+    public static void main(String[] args) {
+        Director directorObj1 = new Director(new EngineerStudent());
+        Director directorObj2 = new Director(new MedicalStudent());
+
+        Student engineerStudent = directorObj1.createStudent();
+        Student mbaStudent =directorObj2.createStudent();
+
+        System.out.println(engineerStudent.toString());
+        System.out.println(mbaStudent.toString());
+
+    }
+}
